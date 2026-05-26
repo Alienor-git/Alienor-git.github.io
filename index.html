@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliénor Peignier</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1714; --muted: #7a7268; --accent: #8b4a2b;
+    --pale: #f5f1eb; --rule: #d8cfc4;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --mono: 'DM Mono', monospace;
+  }
+  body { background: var(--pale); color: var(--ink); font-family: var(--serif); min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+  header { padding: 4rem 3rem 2rem; border-bottom: 1px solid var(--rule); display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .name { font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 300; letter-spacing: 0.06em; line-height: 1; }
+  .name em { font-style: italic; color: var(--accent); }
+  .tagline { font-family: var(--mono); font-size: 0.72rem; font-weight: 300; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; text-align: right; line-height: 1.8; }
+  main { display: grid; grid-template-columns: 1fr 1fr; }
+  section { padding: 3rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  section:nth-child(2n) { border-right: none; }
+  .section-label { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
+  h2 { font-size: 1.75rem; font-weight: 300; line-height: 1.2; margin-bottom: 1rem; }
+  h2 em { font-style: italic; }
+  p { font-size: 1.05rem; line-height: 1.75; color: #3a3530; font-weight: 300; margin-bottom: 0.75rem; }
+  p:last-child { margin-bottom: 0; }
+  .geo-list { list-style: none; margin-top: 1rem; }
+  .geo-list li { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--muted); padding: 0.35rem 0; border-bottom: 0.5px solid var(--rule); display: flex; justify-content: space-between; }
+  .geo-list li:last-child { border-bottom: none; }
+  .geo-list .country { color: var(--ink); }
+  .geo-list .years { color: var(--accent); }
+  .placeholder { background: rgba(139,74,43,0.06); border: 1px dashed var(--accent); border-radius: 4px; padding: 0.75rem 1rem; font-family: var(--mono); font-size: 0.7rem; color: var(--accent); letter-spacing: 0.08em; margin-top: 1rem; }
+  .languages { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  .lang-tag { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; border: 0.5px solid var(--rule); padding: 0.3rem 0.75rem; color: var(--muted); }
+  .lang-tag.native { border-color: var(--accent); color: var(--accent); }
+  footer { padding: 1.5rem 3rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-note { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  @media (max-width: 640px) {
+    main { grid-template-columns: 1fr; }
+    section { border-right: none; }
+    header { padding: 2rem 1.5rem 1.5rem; }
+    section { padding: 2rem 1.5rem; }
+    footer { padding: 1rem 1.5rem; }
+    .tagline { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 class="name">Ali<em>é</em>nor<br>Peignier</h1>
+  <div class="tagline">Transformation &amp; Operations<br>VP · SVP · 17 years across Asia<br>Hong Kong · Singapore · Japan</div>
+</header>
+<main>
+  <section>
+    <p class="section-label">About</p>
+    <h2>Building things that <em>last</em></h2>
+    <p>Seventeen years running large-scale transformation programmes across Asia and global retail. Supply chain, operating model design, ERP implementation, master data, regulatory compliance. Programmes from USD 2M to USD 50M across 15 countries.</p>
+    <p>Most recently VP at DFS Group (LVMH) in Hong Kong, leading a USD 50M SAP S/4HANA greenfield implementation before DFS was sold out of the group. The programme reached 94% best-practice standardisation. That is not a failure.</p>
+    <p>French. Based in Paris. Ready to go back.</p>
+  </section>
+  <section>
+    <p class="section-label">Geography</p>
+    <h2>Eighteen years<br><em>east of Paris</em></h2>
+    <p>Japan, Singapore, Hong Kong. That is where the interesting work was, and likely where it still is.</p>
+    <ul class="geo-list">
+      <li><span class="country">Hong Kong</span><span class="years">2019 – 2025</span></li>
+      <li><span class="country">Singapore</span><span class="years">2013 – 2019</span></li>
+      <li><span class="country">Japan</span><span class="years">2007 – 2013</span></li>
+      <li><span class="country">Paris</span><span class="years">Now</span></li>
+    </ul>
+  </section>
+  <section>
+    <p class="section-label">Tap &amp; Rhythm</p>
+    <h2>The other <em>discipline</em></h2>
+    <p>Transformation work is about rhythm and precision. So is tap dancing — which is not a coincidence.</p>
+    <div class="placeholder">[ ADD your tap dancing details here ]</div>
+  </section>
+  <section>
+    <p class="section-label">Music</p>
+    <h2>Sound &amp; <em>structure</em></h2>
+    <p>Music has its own logic. Once you understand it, it changes how you hear everything else.</p>
+    <div class="placeholder">[ ADD your music details here ]</div>
+  </section>
+  <section>
+    <p class="section-label">Languages</p>
+    <h2>Five <em>languages</em>,<br>one mother tongue</h2>
+    <p>Language is the first infrastructure. Getting it wrong early costs everything downstream.</p>
+    <div class="languages">
+      <span class="lang-tag native">French</span>
+      <span class="lang-tag">English</span>
+      <span class="lang-tag">Arabic</span>
+      <span class="lang-tag">German</span>
+      <span class="lang-tag">Italian</span>
+    </div>
+  </section>
+  <section>
+    <p class="section-label">Next</p>
+    <h2>VP · SVP<br><em>Transformation</em></h2>
+    <p>Looking for the right senior role in transformation or operations leadership. Travel retail, luxury, beauty, spirits, airlines, FMCG. Open to Hong Kong, Japan, Thailand, Middle East, Canada, and the right European city.</p>
+    <p>Not looking for something smaller than what I have already done.</p>
+  </section>
+</main>
+<footer>
+  <span class="footer-note">Paris · Open to relocation</span>
+  <span class="footer-note">linkedin.com/in/alienorpeignier</span>
+</footer>
+</body>
+</html>
