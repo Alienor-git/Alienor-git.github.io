@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Aliénor Peignier</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1714; --muted: #7a7268; --accent: #3d6b4f;
+    --pale: #eef4f0; --rule: #c8d8cc;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --mono: 'DM Mono', monospace;
+  }
+  body { background: var(--pale); color: var(--ink); font-family: var(--serif); max-width: 860px; margin: 0 auto; padding: 4rem 2rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; }
+  .name { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; letter-spacing: 0.06em; line-height: 1; }
+  .title { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 0.5rem; }
+  .contact-block { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; color: var(--muted); text-align: right; line-height: 2; }
+  .contact-block a { color: var(--accent); text-decoration: none; }
+  section { margin-bottom: 2.5rem; }
+  .section-label { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; border-bottom: 0.5px solid var(--rule); padding-bottom: 0.4rem; }
+  p { font-size: 1rem; line-height: 1.75; color: #3a3530; font-weight: 300; margin-bottom: 0.5rem; }
+  .job { margin-bottom: 1.75rem; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.25rem; }
+  .job-title { font-size: 1.1rem; font-weight: 400; }
+  .job-company { font-weight: 600; }
+  .job-date { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; color: var(--accent); }
+  .job-context { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+  ul { list-style: none; padding: 0; }
+  ul li { font-size: 0.95rem; line-height: 1.7; color: #3a3530; font-weight: 300; padding: 0.3rem 0 0.3rem 1rem; border-left: 1.5px solid var(--rule); margin-bottom: 0.4rem; }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .skill-item { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--muted); border-top: 0.5px solid var(--rule); padding-top: 0.5rem; }
+  .skill-item strong { color: var(--ink); display: block; margin-bottom: 0.2rem; }
+  .edu-row { display: flex; justify-content: space-between; font-size: 0.95rem; font-weight: 300; padding: 0.4rem 0; border-bottom: 0.5px solid var(--rule); }
+  .edu-row:last-child { border-bottom: none; }
+  .edu-date { font-family: var(--mono); font-size: 0.65rem; color: var(--accent); }
+  .back-link { display: inline-block; font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); text-decoration: none; margin-bottom: 2rem; }
+  .back-link:hover { opacity: 0.7; }
+  @media (max-width: 600px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .job-header { flex-direction: column; }
+    header { flex-direction: column; align-items: flex-start; }
+    .contact-block { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<a class="back-link" href="index.html">← back to site</a>
+<header>
+  <div>
+    <h1 class="name">Aliénor Peignier</h1>
+    <p class="title">Transformation &amp; Operations Executive</p>
+  </div>
+  <div class="contact-block">
+    HK / FR · Worldwide mobility<br>
+    <a href="https://linkedin.com/in/alienorpeignier" target="_blank">linkedin.com/in/alienorpeignier</a>
+  </div>
+</header>
+
+<section>
+  <p class="section-label">Profile</p>
+  <p>Transformation executive with 17 years in Asia directing enterprise programs up to USD 50M, leading teams of 60 and aligning 300+ stakeholders worldwide. Built and ran global ERP, WMS, PIM and SCP programs while maintaining operational ownership of merchandising shared-services functions. Luxury and travel retail specialist with operational expertise in supply chain, purchasing and finance.</p>
+</section>
+
+<section>
+  <p class="section-label">Notable achievements</p>
+  <ul>
+    <li>Led a USD 50M global ERP, PIM, and SCP program impacting 40+ systems, coordinating 7 vendors and 250 contributors, redesigning 200+ end-to-end processes and unifying the operating model of 20 legal entities.</li>
+    <li>Delivered an APAC ERP rollout in 8 months on time and on budget (USD 3M), achieving full adoption by 100+ users and standardising regional operations and data flows.</li>
+    <li>Raised purchasing fulfilment from 54% to 85% and reduced overstock by USD 12M annually by redesigning the purchasing and planning operating model.</li>
+    <li>Cut warehouse cycle time by 22% and increased throughput reliability through WMS deployment across 3 sites.</li>
+    <li>Built three new departments, directed multicultural teams of 60 from junior staff to senior directors, enabling 15+ internal promotions.</li>
+  </ul>
+</section>
+
+<section>
+  <p class="section-label">Experience</p>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">DFS Group Limited</span> · VP Global Business Process Office</span>
+      <span class="job-date">Feb 2019 – Sep 2025</span>
+    </div>
+    <p class="job-context">LVMH retail Maison · multi-category airport &amp; downtown stores · ~USD 1.3B revenue · Hong Kong</p>
+    <ul>
+      <li>Held dual mandate as programme executive and operational head: led 8 global process workstreams while running master data and regulatory compliance covering 15 import markets and 300,000+ active SKUs.</li>
+      <li>Directed the USD 50M SAP S/4HANA, Relex and Akeneo greenfield implementation. Achieved 94% standardisation on 200+ processes; reached cutover-ready stage with 91% defect resolution on 1,300+ test variants and an 800-activity cutover plan fully rehearsed, prior to suspension following DFS divestiture from LVMH.</li>
+      <li>Progressed from Senior Manager to Vice President across 5 roles over 6 years.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">Heinemann Asia Pacific</span> · Head of Planning</span>
+      <span class="job-date">Nov 2014 – Jan 2019</span>
+    </div>
+    <p class="job-context">Travel retailer Gebr. Heinemann · Southeast Asia operations · ~USD 250M revenue · Singapore</p>
+    <ul>
+      <li>Promoted from Manager to Head of; managed a team of 7 supply planners governing APAC USD 30M inventory across B2B and B2C operations and retail expansions in Sydney and Hong Kong airports.</li>
+      <li>Rolled out SAP F&amp;R with zero customisation, configuring automated replenishment logic for 12,000 SKUs across Asia.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title"><span class="job-company">Rémy Cointreau International</span> · Regional Demand Planner</span>
+      <span class="job-date">Oct 2012 – Oct 2014</span>
+    </div>
+    <p class="job-context">Premium spirits group · travel retail &amp; domestic markets · Singapore</p>
+    <ul>
+      <li>Acted as SAP Key User for SAP ECC rollout: redesigned MM and P2P processes, migrated 1,700 SKUs and coordinated UAT.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Systems expertise</p>
+  <div class="skills-grid">
+    <div class="skill-item"><strong>ERP</strong>SAP S/4HANA Cloud · SAP ECC · MS Dynamics AX</div>
+    <div class="skill-item"><strong>Planning</strong>Relex Suite · SAP F&amp;R · SAP MRP</div>
+    <div class="skill-item"><strong>WMS / BPM</strong>BlueYonder · WRX · IBM BlueWorksLive · Visio</div>
+    <div class="skill-item"><strong>PIM / Reporting</strong>Akeneo · Informatica · Power BI · Excel</div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Education &amp; certifications</p>
+  <div class="edu-row"><span>ESSEC Singapore · Specialised Master, Strategy &amp; International Business</span><span class="edu-date">2010 – 2011</span></div>
+  <div class="edu-row"><span>EMLV · Business Administration</span><span class="edu-date">2004 – 2008</span></div>
+  <div class="edu-row"><span>PRINCE2® · Programme Management</span><span class="edu-date">2026</span></div>
+  <div class="edu-row"><span>Corporate Finance Institute · Finance for Non-Finance Managers</span><span class="edu-date">2026</span></div>
+</section>
+
+</body>
+</html>
